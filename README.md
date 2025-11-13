@@ -106,7 +106,7 @@ Cd to 'src', run the following scripts.
 
 ![Result1](./Figures/Result1.PNG)
 
-![Results2](./Figures/Results2.PNG)
+![Results2](./Figures/Result2.PNG)
 
 
 ## Acknowledgements
