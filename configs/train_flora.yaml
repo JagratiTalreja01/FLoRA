@@ -1,0 +1,60 @@
+seed: 1337
+base_channels: 64
+in_ch_sar: 2
+prior_channels: 1   # NDVI (1-ch). For S2 RGB as prior, set 3 and provide prior=RGB.
+
+dataset:
+  module: data.dataset_sen1floods11
+  class:  Sen1Floods11Dataset
+  train_kwargs:
+    root_s1: /home/jagrati/Desktop/Jagrati/Sen1Floods11/v1.1/data/flood_events/HandLabeled/S1Hand
+    root_s2: /home/jagrati/Desktop/Jagrati/Sen1Floods11/v1.1/data/flood_events/HandLabeled/S2Hand
+    crop_size: 256
+    val_ratio: 0.1
+    use_ndvi_prior: true
+    pair_key: auto
+  val_kwargs:
+    root_s1: /home/jagrati/Desktop/Jagrati/Sen1Floods11/v1.1/data/flood_events/HandLabeled/S1Hand
+    root_s2: /home/jagrati/Desktop/Jagrati/Sen1Floods11/v1.1/data/flood_events/HandLabeled/S2Hand
+    crop_size: 512
+    val_ratio: 0.1
+    use_ndvi_prior: true
+    pair_key: auto
+
+train:
+  batch_size: 2
+  num_workers: 4
+  lr: 2.0e-4
+  weight_decay: 0.0
+  epochs: 1000
+  out_dir: checkpoints_flora
+  freeze_seg_warmup_epochs: 3
+
+
+optim:
+  lr: 2.0e-4
+  betas: [0.9, 0.999]
+  weight_decay: 0.0
+  epochs: 1000
+  bs: 2
+  num_workers: 4
+
+loss_weights:
+  rec: 0.8
+  ssim: 0.15
+  lpips: 0.20
+  seg: 1.0
+  seg_bce: 0.2
+  edge: 0.20
+  freq: 0.10
+  hyd: 0.05
+  distill: 0.02
+  distill_prior: 0.05
+
+grad_clip: 1.0
+
+# --- OPTIONAL: enable these when using train_flora_gan.py ---
+# gan:
+#   lambda_gan: 0.02
+#   lambda_fm: 5.0
+#   start_epoch: 6
