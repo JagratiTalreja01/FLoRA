@@ -108,6 +108,10 @@ Cd to 'src', run the following scripts.
 
 ![Results2](./Figures/Result2.PNG)
 
+![Results2](./Figures/Result3.PNG)
+
+![Results2](./Figures/Result4.PNG)
+
 
 ## Acknowledgements
 This code is built on [Pix2pix (PyTorch)](https://github.com/phillipi/pix2pix) and [CycleGAN-PyTorch](https://junyanz.github.io/CycleGAN/). We thank the authors for sharing their codes.
