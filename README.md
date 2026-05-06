@@ -21,7 +21,7 @@ Designed for disaster response workflows, FLoRA stabilizes joint optimization th
 
 
 
-![FLoRA (Architecture)](./Figures/architecture.PNG)
+![FLoRA (Architecture)](./Figures/Architecture.PNG)
 
 
 ## Key Highlights:
