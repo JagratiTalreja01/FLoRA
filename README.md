@@ -9,7 +9,8 @@ The code is built on [Pix2pix (PyTorch)](https://github.com/phillipi/pix2pix) (P
 4. [Train](#train)
 5. [Test](#test)
 6. [Results](#results)
-7. [Acknowledgements](#acknowledgements)
+7. [Citation](#citation)
+8. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -112,6 +113,23 @@ Cd to 'src', run the following scripts.
 
 ![Results2](./Figures/Result4.PNG)
 
+## Citation
+If you find the code helpful in your research or work, please cite the following papers.
+```
+@ARTICLE{11554107,
+  author={Talreja, Jagrati and Gebre, Tewodros Syum and Hashemi-Beni, Leila},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={FLoRA: Fusion-Latent for Optical Reconstruction and Flood Area Segmentation via Cross-Modal Multi-Task Distillation Network}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Modeling;Floods;Flora;Specific absorption rate;Synthetic aperture radar;Water;Dies;PSNR;Learning (artificial intelligence);Remote sensing;SAR–optical data fusion;Multi-modal multi-task deep learning;Optical reconstruction;Flood-water segmentation;Remote sensing},
+  doi={10.1109/TGRS.2026.3701300}}
+
+```
 
 ## Acknowledgements
+This research article has been made possible by the support of the National Aeronautics and Space Administration (NASA) award 80NSSC23M0051 and the National Science Foundation (NSF) Award 2401942.
+
 This code is built on [Pix2pix (PyTorch)](https://github.com/phillipi/pix2pix) and [CycleGAN-PyTorch](https://junyanz.github.io/CycleGAN/). We thank the authors for sharing their codes.
