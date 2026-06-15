@@ -1,7 +1,7 @@
 # FLoRA
 FLoRA: Fusion-Latent for Optical Reconstruction &amp; Area Segmentation is a multi-task deep learning architecture designed for multi-modal SAR–Optical data fusion in flood mapping and environmental monitoring.
 
-The code is built on [Pix2pix (PyTorch)](https://github.com/phillipi/pix2pix) (PyTorch) and tested on Ubuntu 20.04.6 environment (Python 3.10.13, PyTorch >= 1.1.0) with NVIDIA RTX A4000 with 16GB RAM. 
+The code is built on [Pix2pix (PyTorch)](https://github.com/phillipi/pix2pix) (PyTorch) and tested on Ubuntu 20.04.6 environment (Python 3.10.13, PyTorch >= 1.1.0) with NVIDIA RTX A4000 with 16GB RAM. The paper has benn published in IEEE Transactions on GeoScience and Remote Sensing. [Paper](https://ieeexplore.ieee.org/abstract/document/11554107)
 ## Contents
 1. [Introduction](#introduction)
 2. [Key Highlights](#keyhighlights)
